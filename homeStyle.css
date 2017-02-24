@@ -1,0 +1,245 @@
+/* Style CSS de la page d'acceuil */
+
+
+/* Définition des polices personnalisées */
+
+@font-face {
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'), url('polices/ballpark.woff') format('woff'), url('polices/ballpark.ttf') format('truetype'), url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'), url('polices/dayrom.woff') format('woff'), url('polices/dayrom.ttf') format('truetype'), url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Style global */
+
+body {
+    /* Application du fond de la page */
+    background: url('images/fond_jaune.png');
+    /* Application des polices personnalisées */
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+#bloc_page {
+    width: 70%;
+    margin: auto;
+}
+
+li {
+    /* Liste sans puces */
+    list-style: none;
+}
+
+p {
+    text-align: justify;
+}
+
+article h1,
+footer h3,
+nav a {
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+
+/* Style du header */
+
+header {
+    background: url('images/separateur.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header h1 {
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+header h2 {
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    font-weight: normal;
+    margin-top: 0px;
+}
+
+
+/* Style de la barre de navigation */
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+
+/* Style de la bannière */
+
+#banner_image {
+    margin-top: 15px;
+    width: 100%;
+    height: 200px;
+    background: url(images/sanfrancisco.jpg) no-repeat;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+#banner_description {
+    position: absolute;
+    bottom: 0px;
+    border-radius: 0px 0px 5px 5px;
+    height: 33px;
+    width: 99.5%;
+    background-color: rgba(24, 24, 24, 0.8);
+    /* Texte */
+    color: white;
+    font-size: 0.8em;
+    /* Padding */
+    padding-top: 18px;
+    padding-left: 4px;
+}
+
+.red_button {
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    top: 11px;
+    background: url('images/fond_degraderouge.png') repeat-x;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.red_button img {
+    border: 0;
+}
+
+
+/* Style de la section */
+
+section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+/* Style de l'aside */
+
+aside {
+    width: 260px;
+    height: 620px;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 10px;
+    /* Padding */
+    padding: 10px;
+    /* Texte */
+    color: white;
+    font-size: 0.9em;
+}
+
+#fleche_bulle {
+    position: relative;
+    top: 100px;
+    left: -22px;
+}
+
+#author_photo {
+    text-align: center;
+}
+
+#author_photo img {
+    border: 1px solid #181818;
+}
+
+#social_networks_element {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+/* Style de l'article */
+
+article h1 {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+article {
+    width: 80%;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+article p {
+    font-size: 0.8em;
+}
+
+
+/* Style du footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+    padding-top: 25px;
+}
+
+footer h3 {
+    font-size: 1.1em;
+}
+
+.footer_element {
+    font-size: 0.8em;
+    width: 30%;
+}
+
+#my_links {
+    display: flex;
+}
+
+.links_element li {
+    /* Ajout puce personnalisée */
+    list-style-image: url('images/ico_liensexterne.png');
+    padding-left: 2px;
+}
+
+.links_element a {
+    text-decoration: none;
+    color: #760001;
+}
